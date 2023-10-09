@@ -1,0 +1,53 @@
+{
+    "policyFlows": [
+      {
+        "type": "shift_completed",
+        "conditions": {
+          "logic": "OR",
+          "conditions": [
+            {
+              "logic": "AND",
+              "conditions": [
+                {
+                  "attribute": "shift_count",
+                  "operator": ">=",
+                  "value": 10
+                },
+                {
+                  "attribute": "timeliness",
+                  "operator": "=",
+                  "value": "ontime"
+                }
+              ]
+            },
+            {
+              "logic": "AND",
+              "conditions": [
+                {
+                  "attribute": "open_shifts_picked",
+                  "operator": ">=",
+                  "value": 2
+                },
+                {
+                  "attribute": "streak",
+                  "operator": ">=",
+                  "value": 5
+                }
+              ]
+            }
+          ]
+        },
+        "actions": [
+          {
+            "type": "allocate_points",
+            "value": 300
+          },
+          {
+            "type": "send_email",
+            "message": "Outstanding! You've earned 300 points for your exceptional performance."
+          }
+        ]
+      }
+    ]
+  }
+  

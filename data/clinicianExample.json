@@ -1,0 +1,22 @@
+{
+    "clinicians": [
+      {
+        "id": "c1",
+        "name": "John Doe",
+        "shift_count": 12,
+        "timeliness": "ontime",
+        "open_shifts_picked": 3,
+        "streak": 5,
+        "email": "johndoe@example.com"
+      },
+      {
+        "id": "c2",
+        "name": "Jane Smith",
+        "shift_count": 8,
+        "timeliness": "late",
+        "open_shifts_picked": 1,
+        "streak": 4,
+        "email": "janesmith@example.com"
+      }
+    ]
+  }

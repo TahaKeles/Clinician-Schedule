@@ -1,0 +1,22 @@
+{
+  "name": "policy-engine-challenge",
+  "version": "1.0.0",
+  "description": "A coding challenge to implement a policy engine.",
+  "main": "main.ts",
+  "scripts": {
+    "start": "tsc && node ./dist/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typescript",
+    "coding-challenge",
+    "policy-engine"
+  ],
+  "author": "Taha Keles",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^16.11.12",
+    "fs": "^0.0.1-security",
+    "typescript": "^4.5.5"
+  }
+}
